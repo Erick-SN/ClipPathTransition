@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aqua;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+}
+
+p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  position: relative;
+  margin-right: 9%;
+}
+
+/* .container {
+  background-color: teal;
+  padding: 1em;
+  border-radius: 10px;
+  width: 300px;
+} */
+
+.container .inner {
+  background-color: deepskyblue;
+  padding: 1em;
+  border-radius: 10px;
+  width: 300px;
+  clip-path: circle(10% at 85% 25%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.inner:hover {
+  clip-path: circle(75%);
+  background-color: #4abcef;
+}
+
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
